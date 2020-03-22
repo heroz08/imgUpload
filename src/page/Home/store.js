@@ -20,7 +20,6 @@ export default class Store {
   }
 
   beforUpload = (file) => {
-    console.log(file)
     this.fileList = [...this.fileList, file];
     return false;
   }
@@ -41,7 +40,6 @@ export default class Store {
     })
 
     const res = await axios.post('http://zilongshijia.top:1088/upload', formData, );
-    console.log(res);
     const {data = []} = res.data;
     this.setData({
       preImgList: data
