@@ -19,7 +19,7 @@ export default class Store {
       formData.append('file' + (index || ''), file)
     })
 
-    const res = await axios.post('http://127.0.0.1/upload', formData, );
+    const res = await axios.post('http://zilongshijia.top:1088/upload', formData, );
     console.log(res);
     const {data = []} = res.data;
     this.setData({
