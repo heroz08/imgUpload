@@ -27,7 +27,7 @@ import './index.less';
       <div className="page-wrap" freshData={this.store.refreshData}>
         <div>
           <div className="upload-wrap">
-          <Upload beforeUpload={this.store.beforUpload} listType="picture-card" multiple={true} accept=".JPG, .PNG, .GIF, .JEPG">
+          <Upload {...this.store.uploadPorps}>
           <UploadOutlined />
           {/* <Button type="ghost"><UploadOutlined /></Button> */}
         </Upload>
